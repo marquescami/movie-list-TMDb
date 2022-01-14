@@ -12,6 +12,12 @@
 		E557A15E2791BFB30010202F /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A15D2791BFB30010202F /* ActivityIndicatorView.swift */; };
 		E557A1602791C0AC0010202F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A15F2791C0AC0010202F /* LoadingView.swift */; };
 		E557A1622791C3B80010202F /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A1612791C3B80010202F /* MoviePosterCarouselView.swift */; };
+		E557A1642791C9580010202F /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A1632791C9580010202F /* MovieDetailView.swift */; };
+		E557A1662791CAE60010202F /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A1652791CAE60010202F /* MovieDetailState.swift */; };
+		E557A1682791FC500010202F /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A1672791FC500010202F /* SafariView.swift */; };
+		E557A16A2791FECA0010202F /* MovieSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A1692791FECA0010202F /* MovieSearchView.swift */; };
+		E557A16C2791FF180010202F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A16B2791FF180010202F /* SearchBar.swift */; };
+		E557A16E279202FA0010202F /* MovieSearchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E557A16D279202FA0010202F /* MovieSearchState.swift */; };
 		E5703BE52790E6D60014B0AC /* Movie_swiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5703BE42790E6D60014B0AC /* Movie_swiftApp.swift */; };
 		E5703BE72790E6D60014B0AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5703BE62790E6D60014B0AC /* ContentView.swift */; };
 		E5703BE92790E6D70014B0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5703BE82790E6D70014B0AC /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 		E557A15D2791BFB30010202F /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		E557A15F2791C0AC0010202F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E557A1612791C3B80010202F /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
+		E557A1632791C9580010202F /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		E557A1652791CAE60010202F /* MovieDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
+		E557A1672791FC500010202F /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		E557A1692791FECA0010202F /* MovieSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchView.swift; sourceTree = "<group>"; };
+		E557A16B2791FF180010202F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E557A16D279202FA0010202F /* MovieSearchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchState.swift; sourceTree = "<group>"; };
 		E5703BE12790E6D60014B0AC /* Movie-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5703BE42790E6D60014B0AC /* Movie_swiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_swiftApp.swift; sourceTree = "<group>"; };
 		E5703BE62790E6D60014B0AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				E557A15D2791BFB30010202F /* ActivityIndicatorView.swift */,
+				E557A1672791FC500010202F /* SafariView.swift */,
+				E557A16B2791FF180010202F /* SearchBar.swift */,
 			);
 			path = UIKitView;
 			sourceTree = "<group>";
@@ -153,6 +167,8 @@
 				E557A1582791BC160010202F /* MovieListView.swift */,
 				E557A15F2791C0AC0010202F /* LoadingView.swift */,
 				E557A1612791C3B80010202F /* MoviePosterCarouselView.swift */,
+				E557A1632791C9580010202F /* MovieDetailView.swift */,
+				E557A1692791FECA0010202F /* MovieSearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -162,6 +178,8 @@
 			children = (
 				E5703C122791032D0014B0AC /* ImageLoader.swift */,
 				E557A15A2791BC590010202F /* MovieListState.swift */,
+				E557A1652791CAE60010202F /* MovieDetailState.swift */,
+				E557A16D279202FA0010202F /* MovieSearchState.swift */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -242,7 +260,10 @@
 				E5703BE72790E6D60014B0AC /* ContentView.swift in Sources */,
 				E5703BE52790E6D60014B0AC /* Movie_swiftApp.swift in Sources */,
 				E5703C0F2791025F0014B0AC /* MovieBackdropCard.swift in Sources */,
+				E557A1662791CAE60010202F /* MovieDetailState.swift in Sources */,
+				E557A16E279202FA0010202F /* MovieSearchState.swift in Sources */,
 				E5703BFB2790F0090014B0AC /* MovieService.swift in Sources */,
+				E557A16A2791FECA0010202F /* MovieSearchView.swift in Sources */,
 				E576681B2791283800B6ADB2 /* MoviePosterCard.swift in Sources */,
 				E557A1592791BC160010202F /* MovieListView.swift in Sources */,
 				E557A15B2791BC590010202F /* MovieListState.swift in Sources */,
@@ -250,9 +271,12 @@
 				E557A1602791C0AC0010202F /* LoadingView.swift in Sources */,
 				E5703C132791032D0014B0AC /* ImageLoader.swift in Sources */,
 				E5703C032790FE310014B0AC /* Movie+Stub.swift in Sources */,
+				E557A1682791FC500010202F /* SafariView.swift in Sources */,
+				E557A16C2791FF180010202F /* SearchBar.swift in Sources */,
 				E5703C1527911EE10014B0AC /* MovieBackdropCarouselView.swift in Sources */,
 				E5703BF82790E9030014B0AC /* Movie.swift in Sources */,
 				E5703BFD2790F53A0014B0AC /* MovieStore.swift in Sources */,
+				E557A1642791C9580010202F /* MovieDetailView.swift in Sources */,
 				E557A1622791C3B80010202F /* MoviePosterCarouselView.swift in Sources */,
 				E557A15E2791BFB30010202F /* ActivityIndicatorView.swift in Sources */,
 			);
@@ -393,6 +417,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
