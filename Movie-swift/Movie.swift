@@ -28,5 +28,5 @@ struct Movie: Decodable, Identifiable {
     
     var posterURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath ?? "")")!
-    }
+    } 
 }

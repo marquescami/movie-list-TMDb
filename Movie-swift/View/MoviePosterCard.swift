@@ -15,10 +15,11 @@ struct MoviePosterCard: View {
     var body: some View {
         ZStack {
             if self.imageLoader.image != nil {
-                Image(uiImage: self.imageLoader.image!).ignoresSafeArea()
-                    //.resizable()
-                    .aspectRatio(contentMode: .fill)
-                   // .cornerRadius(8)
+                Image(uiImage: self.imageLoader.image!)
+                    //.ignoresSafeArea()
+                    .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    .cornerRadius(8)
                     .shadow(radius: 4)
                     
                 
