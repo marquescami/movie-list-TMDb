@@ -71,6 +71,8 @@ struct MovieListView: View {
                 
                 
             }
+            .listStyle(.plain)
+           
             .navigationBarTitle("The MovieDb")
         }
         .onAppear {
