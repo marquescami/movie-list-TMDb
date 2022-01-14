@@ -7,7 +7,7 @@
 
 import Foundation
 
-private let apiKey = "1d3541498be4b5e6126c695a2fe109aa"
+
 protocol MovieService {
     
     func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
