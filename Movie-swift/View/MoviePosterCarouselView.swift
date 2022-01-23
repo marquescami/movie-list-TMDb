@@ -13,9 +13,9 @@ struct MoviePosterCarouselView: View {
     let movies: [Movie]
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 2) {
             Text(title)
-                .font(.title)
+                .font(.custom("Optima", size: 25))
                 .fontWeight(.bold)
                 .padding(.horizontal)
             

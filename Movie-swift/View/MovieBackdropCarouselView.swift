@@ -15,7 +15,7 @@ struct MovieBackdropCarouselView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
-                .font(.title)
+                .font(.custom("Optima", size: 25))
                 .fontWeight(.bold)
                 .padding(.horizontal)
             

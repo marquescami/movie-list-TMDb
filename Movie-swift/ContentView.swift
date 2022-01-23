@@ -16,8 +16,8 @@ struct ContentView: View {
                         Image(systemName: "tv")
                         Text("Movies")
                     }
-            }
-            .tag(0)
+                }
+                .tag(0)
             
             MovieSearchView()
                 .tabItem {
@@ -25,9 +25,8 @@ struct ContentView: View {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
-            }
-            .tag(1)
-            
+                }
+                .tag(1)
         }
     }
 }

@@ -16,7 +16,6 @@ struct MoviePosterCard: View {
         ZStack {
             if self.imageLoader.image != nil {
                 Image(uiImage: self.imageLoader.image!)
-                    //.ignoresSafeArea()
                     .resizable()
                         .aspectRatio(contentMode: .fit)
                     .cornerRadius(8)
@@ -28,8 +27,6 @@ struct MoviePosterCard: View {
                     .fill(Color.gray.opacity(0.3))
                     .cornerRadius(8)
                     .shadow(radius: 4)
-                
-                
                 Text(movie.title)
                     .multilineTextAlignment(.center)
             }

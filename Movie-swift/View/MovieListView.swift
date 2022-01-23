@@ -20,19 +20,17 @@ struct MovieListView: View {
                 Group {
                     if nowPlayingState.movies != nil {
                         MoviePosterCarouselView(title: "Now Playing", movies: nowPlayingState.movies!)
-                        
                     } else {
                         LoadingView(isLoading: self.nowPlayingState.isLoading, error: self.nowPlayingState.error) {
                             self.nowPlayingState.loadMovies(with: .nowPlaying)
                         }
                     }
-                    
                 }
-                .listRowInsets(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
                 
                 Group {
                     if upcomingState.movies != nil {
                         MovieBackdropCarouselView(title: "Upcoming", movies: upcomingState.movies!)
+                        
                     } else {
                         LoadingView(isLoading: self.upcomingState.isLoading, error: self.upcomingState.error) {
                             self.upcomingState.loadMovies(with: .upcoming)
@@ -40,22 +38,15 @@ struct MovieListView: View {
                     }
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                
-                
                 Group {
                     if topRatedState.movies != nil {
-                        MovieBackdropCarouselView(title: "Top Rated", movies: topRatedState.movies!)
-                        
+                        MovieBackdropCarouselView(title: "Top Rated", movies: topRatedState.movies!) 
                     } else {
                         LoadingView(isLoading: self.topRatedState.isLoading, error: self.topRatedState.error) {
                             self.topRatedState.loadMovies(with: .topRated)
                         }
                     }
-                    
-                    
                 }
-                .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
-                
                 Group {
                     if popularState.movies != nil {
                         MovieBackdropCarouselView(title: "Popular", movies: popularState.movies!)
@@ -67,13 +58,18 @@ struct MovieListView: View {
                     }
                 }
                 .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 16, trailing: 0))
-                
-                
-                
             }
             .listStyle(.plain)
-           
-            .navigationBarTitle("The MovieDb")
+            .navigationBarTitleDisplayMode(.inline)
+            .font(.custom("Optima", size: 20))
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Movie DB 🍿 🎬")
+                        .font(.custom("Gill Sans", size: 40).bold())
+                        .accessibilityAddTraits(.isHeader)
+                }
+            }
+    
         }
         .onAppear {
             self.nowPlayingState.loadMovies(with: .nowPlaying)
